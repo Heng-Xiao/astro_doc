@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款SSM医院预约挂号系统 - 程序猿代码之路</title><meta name="description" content="Spring+Mybatis+Spring MVC"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款SSM医院预约挂号系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 19, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://coderroad.cn/javapreject/guahao21.png" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】后台回复【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">SSM医院预约挂号系统</span>】即可获取！</p>
+<h2 id="系统简介">系统简介</h2>
+<p>随着医疗水平的提高，以及人们对于健康的观念越来越重视，出入医院成了一种常见的现象。而随着看病人数增多，经常出现挂号难的现象。一部分原因时号源有限，挂号人数多；另一方面是绝大多数人都选择线下取号。这就导致了医院当中排队的人数过多。本系统则是基于SSM技术开发的Web应用程序。通过Idea进行编程开发。之后通过MySQL构建数据库表。由Tomcat运行访问。传统的就诊方式则是纸质病历单，这难以保存，且文字显示不方便。而线上则可以快速查看数据，且永久保存在MySQL。线上预约就诊在很大程度上方便了人们看病。</p>
+<p>医院预约挂号系统主要是为了提高工作人员的工作效率和更方便快捷的满足用户，更好存储所有数据信息及快速方便的检索功能，对系统的各个模块是通过许多今天的发达系统做出合理的分析来确定考虑用户的可操作性，遵循开发的系统优化的原则，经过全面的调查和研究。</p>
+<p>系统所要实现的功能分析，对于现在网络方便的管理，系统要实现用户可以直接在平台上进行查看所有数据信息，根据需求可以进行在线添加，删除或修改医院预约挂号系统信息，这样既能节省时间，不用再像传统的方式耽误时间，真的很难去满足用户的各种需求。所以医院预约挂号系统的开发不仅能满足用户的需求，还能减少原有不必要的工作量，大大提高了管理员的工作效率。</p>
+<p>功能模块：登录注册、医院挂号、科室挂号、医生挂号、意见反馈、最新公告、联系我们等等。</p>
+<h2 id="系统涉及">系统涉及</h2>
+<p>涉及技术 ：Spring+Spring MVC+MyBatis+JSP+Jquery
+涉及环境 ：Jdk 1.8+Windows 10+MySql 5.7+Maven 3.5.2+Tomcat 9.0.5
+涉及工具 : Navicat Premium 12 + idea 2020.0.3</p>
+<h2 id="系统运行">系统运行</h2>
+<p>大家拿到的源码是如下这个样子的
+<img src="https://coderroad.cn/javapreject/guahao2.png" alt="image.png">
+然后咱们进行解压得到如下：分别得到一个数据库文件和一个源代码文件夹。
+<img src="https://coderroad.cn/javapreject/guahao3.png" alt="image.png">
+接下来咱们直接在idea里面打开ssm_pro文件夹，注意：只到ssm_pro文件夹，选择的时候会提示看到一个黑的框框如下所示：直接点击ok就行了。
+<img src="https://coderroad.cn/javapreject/guahao4.png" alt="image.png">
+打开之后就会来到这了，大家第一次打开可能会很慢，他maven是在自动下载依赖的，所以就会特别慢。
+<img src="https://coderroad.cn/javapreject/guahao5.png" alt="image.png">
+接下来咱们进入设置settings配置maven。如下
+<img src="https://coderroad.cn/javapreject/guahao6.png" alt="">
+配置好了大家可以重新刷新一下maven即可,如下所示：
+<img src="https://coderroad.cn/javapreject/guahao7.png" alt="image.png">
+然后等待下载完依赖即可。咱们可以趁着这个时候新建数据库hosdb，因为他的数据库配置文件里面写的是这个数据库名称，因此咱们新建一个与他的配置一样的数据库即可。打开Navicat Premium 12，新建数据库
+<img src="https://coderroad.cn/javapreject/guahao8.png" alt="image.png">
+然后按照以下进行，点击确定即可。
+<img src="https://coderroad.cn/javapreject/guahao9.png" alt="image.png">
+接下来运行sql脚本，也就是咱们解压之后的hospitaldb.sql文件
+<img src="https://coderroad.cn/javapreject/guahao10.png" alt="image.png">
+选中文件，然后点击开始。
+<img src="https://coderroad.cn/javapreject/guahao11.png" alt="image.png">
+然后刷新一下表，双击打开表都是有数据的，如下：
+<img src="https://coderroad.cn/javapreject/guahao12.png" alt="image.png">
+接下来咱进入idea打开jdbc.properties配置一下数据库信息：
+<img src="https://coderroad.cn/javapreject/guahao13.png" alt="image.png">
+接下来咱们配置Tomcat，按照如下顺序点击即可：
+<img src="https://coderroad.cn/javapreject/guahao14.png" alt="image.png">
+配置tomcat，选择自己的tomcat目录，点击ok。
+<img src="https://coderroad.cn/javapreject/guahao15.png" alt="image.png">
+点击配置用war包启动。
+<img src="https://coderroad.cn/javapreject/guahao16.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao17.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao18.png" alt="image.png">
+以上呢，咱们就配置号tomcat了，有不明白的大家回去看看【开发工具篇】里面的idea集成tomcat，里面都有解释的。接下来点击启动即可
+<img src="https://coderroad.cn/javapreject/guahao19.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao20.png" alt="image.png">
+启动成功，接下来咱们就来演示一下项目吧！！</p>
+<h2 id="系统演示">系统演示</h2>
+<p><img src="https://coderroad.cn/javapreject/guahao21.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao22.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao23.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao24.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao25.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao26.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao27.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao28.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao29.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao30.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao31.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao32.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao33.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao34.png" alt="image.png">
+<img src="https://coderroad.cn/javapreject/guahao35.png" alt="image.png"></p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

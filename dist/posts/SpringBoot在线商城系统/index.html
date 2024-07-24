@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款基于SpringBoot在线商城系统 - 程序猿代码之路</title><meta name="description" content="SpringBoot+Swagger"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款基于SpringBoot在线商城系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 23, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://files.mdnice.com/user/64619/83ef616f-a316-45e5-b7d6-dd1fcf7641f6.jpg" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】后台回复【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">商城boot</span>】即可获取！</p>
+<blockquote>
+<p>💡 大家好，这里是<strong>程序猿代码之路</strong>！</p>
+<p><strong>💐背景 : </strong>随着电子商务的蓬勃发展，线上购物已成为现代生活的一部分。为了提供一个高效、便捷、多功能的购物体验，今天给大家介绍一个<strong>基于Spring Boot的商城系统</strong>。该系统不仅支持基本的浏览、购物、支付流程，还集成了Word和Excel模板操作、邮件通知、Swagger接口预览以及货物自提功能。这些功能的整合，旨在打造一个全面、便捷的购物平台。</p>
+</blockquote>
+<h2 id="一项目介绍">一、项目介绍</h2>
+<p>在当今数字化、网络化的时代背景下，电子商务已经成为现代商业的重要组成部分。消费者越来越倾向于通过在线平台进行购物，以节省时间并享受更多的便利性。为此，今天给大家介绍一个基于<strong>Spring Boot的商城系统</strong>，旨在为用户提供一个功能丰富、操作便捷、安全可靠的购物环境。</p>
+<p>该系统涵盖了从商品浏览到下单支付，再到订单管理的全流程电商服务，并提供了Word和Excel模板操作、邮件通知、Swagger接口预览以及货物自提等附加功能，以满足不同用户的需求。</p>
+<h3 id="前台功能">前台功能</h3>
+<ul>
+<li><strong>首页展示</strong>：展示商城的轮播图、热门商品推荐、促销活动等，吸引用户眼球。</li>
+<li><strong>商品浏览</strong>：用户可以查看商品的详细信息，包括价格、规格、库存、用户评价等。</li>
+<li><strong>搜索与筛选</strong>：提供搜索框，支持关键词搜索，同时可对商品进行分类筛选。</li>
+<li><strong>购物车管理</strong>：用户可以将商品添加至购物车，修改商品数量，或移除商品。</li>
+<li><strong>订单处理</strong>：用户填写收货信息，选择支付方式，并在支付后追踪订单状态。</li>
+</ul>
+<h3 id="后台功能">后台功能</h3>
+<ul>
+<li><strong>登录认证</strong>：管理员通过专属入口登录后台管理系统。</li>
+<li><strong>仪表盘</strong>：展示销售概览、热门商品、新注册用户等关键信息。</li>
+<li><strong>商品管理</strong>：添加、编辑或删除商品信息，包括价格、库存、描述等。</li>
+<li><strong>订单管理</strong>：查看所有订单状态，处理发货、退款等操作。</li>
+</ul>
+<p>当然，以上只是写了少部分，还有更多功能等待你的挖掘！！</p>
+<h2 id="二项目技术栈">二、项目技术栈</h2>
+<ul>
+<li><strong>前端</strong>：使用HTML5、CSS3和JavaScript构建用户界面，利用Vue.js框架实现响应式交互。</li>
+<li><strong>后端</strong>：以Spring Boot作为基础框架，利用其自动配置、内嵌Web服务器等特性简化开发。</li>
+<li><strong>数据库</strong>：选择MySQL作为存储介质，通过MyBatis进行数据持久化操作。</li>
+<li><strong>其他技术</strong>：集成Apache POI处理Excel文件、JavaMail实现邮件发送、Swagger2提供API文档。</li>
+</ul>
+<h2 id="三项目运行步骤">三、项目运行步骤</h2>
+<p>拿到资料解压后得到如下源码，因为这个项目ssm框架和springboot框架的源码都有的，但是在这我就按照springboot框架的来演示了，对ssm框架有兴趣的也可以自己去试试看！</p>
+<p><img src="https://files.mdnice.com/user/64619/342cd344-5841-465f-894b-dec21de37b09.png" alt=""></p>
+<p>在数据库中新建<code>db_shopmaster</code>数据库，然后导入<code>db_springbootshopmaster.sql</code>文件。得到如下表：</p>
+<p><img src="https://files.mdnice.com/user/64619/693efbe4-f467-4639-9b09-987167082eb6.png" alt=""></p>
+<p>将<code>SpringbootSchoolShop</code>文件夹导入<code>Idea</code>中如下：</p>
+<p><img src="https://files.mdnice.com/user/64619/99827540-31bb-4eb7-b457-5783b3975e99.png" alt=""></p>
+<p>打开<code>src/main/resources/application.yml</code>文件修改数据库配置相关：</p>
+<p><img src="https://files.mdnice.com/user/64619/3d8077fa-1563-4c94-ab0d-fc4332dc0370.png" alt=""></p>
+<p>接下来咱们进入设置<code>settings</code>配置<code>maven</code>。如下</p>
+<p><img src="https://files.mdnice.com/user/64619/ca6a3c89-709b-4ccc-b730-e2a9a75037be.png" alt=""></p>
+<p>配置好了大家可以重新刷新一下maven即可,然后等待加载即可，如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/d0db2256-cb36-400c-ae02-c96547e9474f.png" alt=""></p>
+<p>接下来启动项目即可</p>
+<p><img src="https://files.mdnice.com/user/64619/8c22abfd-33fd-422a-828a-06c7f5106d89.png" alt=""></p>
+<p>如下，启动成功！无报错！</p>
+<p><img src="https://files.mdnice.com/user/64619/b2d1bbd0-b30d-4544-a0b8-deb0126a4700.png" alt=""></p>
+<ol>
+<li>
+<p>API接口访问
+<strong><a href="http://127.0.0.1:8081/shop/swagger-ui.html">http://127.0.0.1:8081/shop/swagger-ui.html</a></strong></p>
+</li>
+<li>
+<p>管理员访问
+<strong><a href="http://127.0.0.1:8081/shop/admin/login">http://127.0.0.1:8081/shop/admin/login</a></strong></p>
+</li>
+<li>
+<p>普通用户访问
+<strong><a href="http://127.0.0.1:8081/shop/">http://127.0.0.1:8081/shop/</a></strong></p>
+</li>
+</ol>
+<ul>
+<li>
+<p>管理员帐号/密码：  <strong>admin</strong> / <strong>12345678</strong></p>
+</li>
+<li>
+<p>用户帐号   <strong>root codingzx  admin</strong>  密码均为  <strong>12345678</strong></p>
+</li>
+<li>
+<p>图片保存路径：  可以全局搜索后替换</p>
+<ul>
+<li>windows:  D:/upload</li>
+<li>linux:  /usr/upload</li>
+<li>mac：需要修改代码，见下面已知问题记录. 或者代码全局搜索</li>
+</ul>
+</li>
+</ul>
+<h2 id="四项目演示">四、项目演示</h2>
+<h3 id="前台演示">前台演示</h3>
+<p><img src="https://files.mdnice.com/user/64619/83ef616f-a316-45e5-b7d6-dd1fcf7641f6.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/0c397ff1-660f-4ab3-b2dd-4f2774beee14.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f0189325-0503-4563-aec6-f45dc25d73b3.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/9d1ed93b-cc12-4050-89a5-c63de436574c.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/4fa32538-f842-4e5e-b6ba-50ac9a1e8e23.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/20e188e1-0c8a-4944-8b2e-ba26e113ad78.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/4b37d1d9-ac15-4d59-93ee-378dda6db5c8.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/ced54df8-1f30-4885-8eee-dd86c404b031.jpg" alt=""></p>
+<h3 id="后台演示">后台演示</h3>
+<p><img src="https://files.mdnice.com/user/64619/0475ad08-8e26-4f60-8e0e-a9469ba3f7b9.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/8291acba-19b6-4f14-abf4-9f0d2e224ab9.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/c8126ce4-8685-4447-9879-712599cda5ad.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/b467487b-e317-41eb-abcd-7621119b52ca.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f454ef4e-e218-4c49-9516-d9c178303fe1.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/7e088d7a-3d4e-48f1-a57b-8bc4dc65ec35.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/c57c7c3c-82dd-479f-9241-d42e6bd86291.jpg" alt=""></p>
+<p>其它的就不展示了，大家有兴趣的话可以自己去下载源码来运行看看。源码获取请关注公众号并后台回复【<strong>商城boot</strong>】即可获取！</p>
+<h2 id="总结">总结</h2>
+<p><strong>基于Spring Boot的商城系统</strong>，不仅提供了丰富的功能，如模板操作、邮件通知、Swagger接口预览和货物自提，还注重系统的安全性和性能。通过整合当下流行的技术，该系统为商家和顾客提供了一个稳定、高效、易用的电子商务平台。</p>
+<p>如若大家想了解更多相关知识，请<strong>关注我</strong>，一名有故事的程序猿！！创作不易，都是自己一步一步去找并且总结的项目，麻烦大家给个<strong>关注</strong>和<strong>赞</strong>，最后感谢您的阅读，希望本文对您有所帮助！如有任何疑问或建议，请随时<strong>留言交流</strong>。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

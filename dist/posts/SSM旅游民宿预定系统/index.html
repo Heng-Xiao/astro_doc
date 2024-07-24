@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款SSM旅游民宿预定系统 - 程序猿代码之路</title><meta name="description" content="Spring+Mybatis+Spring MVC"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款SSM旅游民宿预定系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 19, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://files.mdnice.com/user/64619/6fcd41ea-1be3-425a-9ad0-a1fd73e62f60.jpg" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】后台回复【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">民宿预定SSM</span>】即可获取！</p>
+<blockquote>
+<p>💡 大家好，这里是<strong>程序猿代码之路</strong>！</p>
+<p><strong>💐背景 : </strong>随着旅游业的快速发展，民宿作为一种独特的住宿方式越来越受到游客的喜爱。为了提升用户体验、优化管理效率，我们基于Spring+SpringMVC+MyBatis（<strong>SSM</strong>）框架开发了一款<strong>旅游民宿预定系统</strong>。</p>
+<p><strong>🤟简介 : </strong>本次将详细给大家介绍下这个系统的核心功能和教大家如何运行，帮助大家了解如何通过技术提升民宿预定体验。<strong>后面附源码获取方式</strong>。</p>
+</blockquote>
+<h2 id="一项目介绍">一、项目介绍</h2>
+<p>旅游行业的快速发展带动了民宿市场的蓬勃兴起，而互联网技术的融合为民宿预定带来了前所未有的便捷性。面对日益增长的市场需求和日益挑剔的客户，传统的民宿管理方式已难以满足现代旅客的期待。为此，我们基于<strong>SSM框架</strong>，打造了一款功能全面、操作简便、响应快速的<strong>旅游民宿预定系统</strong>。其有如下功能。</p>
+<h3 id="游客功能">游客功能</h3>
+<p><strong>用户注册与登录</strong>：用户可通过系统注册成为新会员，登录后享受预订服务。登录权限拦截确保了只有认证用户才能访问预定相关页面。</p>
+<p><strong>房间搜索与支付</strong>：用户可以按名称搜索房间，查看房间详情，并在满意后进行在线支付流程，系统支持多种支付方式。</p>
+<p><strong>订单管理</strong>：用户可查看自己的订单信息和状态，对已住房间进行评价，系统将根据评价自动修改订单状态。</p>
+<p><strong>房间库存监控</strong>：系统实时统计剩余房间数量，当房间数量为0时，用户将无法进行预定，确保订单的有效执行。</p>
+<h3 id="管理员功能">管理员功能</h3>
+<p><strong>房间分类管理</strong>：管理员可以对房间类型进行删除、修改和查询，并准备添加增添功能，如上传房间类型图片，丰富房间展示效果。</p>
+<p><strong>房间管理</strong>：管理员负责房间的增删改查，可以查询已上传房间的所有照片，设置房间的配套设施属性，以及房间价格、名称、描述等信息。</p>
+<p><strong>订单管理</strong>：管理员可以修改、删除订单信息，进行组合条件查询，筛选出超时未评论的订单，及时跟进顾客反馈。</p>
+<h3 id="高级功能">高级功能</h3>
+<p><strong>数据导出与打印</strong>：系统支持各种列表清单的导出和打印功能，方便管理员进行数据分析和存档。</p>
+<p><strong>订单组合条件查询</strong>：管理员可以通过多重条件组合查询订单，如按照时间、房间类型、客户信息等，快速找到所需数据。</p>
+<h2 id="二项目技术栈">二、项目技术栈</h2>
+<p><strong>Spring</strong> 是一个轻量级控制反转（IoC）和面向切面（AOP）的容器框架，负责管理对象生命周期和依赖关系。</p>
+<p><strong>Spring MVC</strong> 是一个基于Servlet的Web应用框架，实现了模型-视图-控制器（MVC）设计模式，用于构建Web应用程序。</p>
+<p><strong>MyBatis</strong> 是一个持久层框架，提供了简化的数据库交互和灵活的数据映射，消除了几乎所有JDBC代码和参数手工设置的需要。</p>
+<h2 id="三项目运行">三、项目运行</h2>
+<p>解压得到源码如下：</p>
+<p><img src="https://files.mdnice.com/user/64619/25fc82bf-5012-4def-b1ab-06baf76b347c.png" alt=""></p>
+<p>将文件夹导入Idea中，如下所示</p>
+<p><img src="https://files.mdnice.com/user/64619/264e0b51-1b4f-45e8-a94c-72e2e90b67da.jpg" alt=""></p>
+<p>打开<code>src/main/resources/applicationContext.xml</code>文件将数据库相关调整成自己的</p>
+<p><img src="https://files.mdnice.com/user/64619/ca077f01-85c4-4b25-804d-839b570b94b2.png" alt=""></p>
+<p>将数据库文件<code>minsu.sql</code>导入数据库中得到如下表：</p>
+<p><img src="https://files.mdnice.com/user/64619/b9794f9e-d7b5-4214-a91b-45cafd82cdc4.png" alt=""></p>
+<p>接下来咱们进入设置<code>settings</code>配置<code>maven</code>。如下</p>
+<p><img src="https://files.mdnice.com/user/64619/ca6a3c89-709b-4ccc-b730-e2a9a75037be.png" alt=""></p>
+<p>配置好了大家可以重新刷新一下<code>maven</code>即可,然后等待加载即可，如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/a12ad564-5874-4368-a9bd-183621cc6127.png" alt=""></p>
+<p>接下来配置<code>Tomcat</code>，<code>SSM</code>项目需要配置<code>Tomcat</code>的，大家需要提前下载好自己的<code>Tomcat</code>,配置步骤如下：</p>
+<p>新增<code>tomcat</code>服务</p>
+<p><img src="https://files.mdnice.com/user/64619/351871a7-f516-4648-ac0d-ee11ce39c3f4.png" alt=""></p>
+<p>选择自己的<code>tomcat</code>路径</p>
+<p><img src="https://files.mdnice.com/user/64619/bbb65363-16c3-427f-ba0d-ec51029fe5fd.png" alt=""></p>
+<p>配置启动相关</p>
+<p><img src="https://files.mdnice.com/user/64619/979a9566-92de-4f74-bbe0-1348f8d99361.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/889be8df-286b-4bbf-b7ea-7a8a7c687b68.png" alt=""></p>
+<p>该配置的都已经配置完毕，启动即可。</p>
+<p><img src="https://files.mdnice.com/user/64619/2de6bad7-0318-4083-9389-1538dc624106.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/1c916ff0-0fa8-4cbd-b958-d3bd8631ad30.png" alt=""></p>
+<p>运行成功，无报错</p>
+<p>地址：<a href="http://localhost:8888/">http://localhost:8888/</a></p>
+<p>用户名：<strong>root</strong></p>
+<p>密码：<strong>root</strong></p>
+<h2 id="四项目演示">四、项目演示</h2>
+<p><img src="https://files.mdnice.com/user/64619/6fcd41ea-1be3-425a-9ad0-a1fd73e62f60.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/1f15f18a-322b-44ce-992b-a5354571a1a0.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/ce4900a8-4bdf-4c10-9e60-cfe6d8beea80.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/4e08d773-5fa4-47e7-9d7e-988234d0ee3e.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/3884403b-2a89-4d4f-80c8-7e73e787d890.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/e168bd7a-6a9d-46d3-a1ea-0c030737a0c5.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/33a61be7-26f9-40a1-b602-20759c9c7229.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/8ea71a64-a620-4177-bf3d-a6b27129374c.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/ab0e69f0-7f2d-4044-a1b0-f709db106838.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/cc36baad-de6f-4ff5-aa52-b27b26515408.png" alt=""></p>
+<p>其它的就不展示了，大家有兴趣的话可以自己去下载源码来运行看看。源码获取请关注并后台回复【<strong>民宿预定SSM</strong>】即可获取！或者去如下小程序中进入<strong>开源项目</strong>—><strong>Java</strong>中即可获取，还有更多项目源码等待你的发现！！</p>
+<h2 id="总结">总结</h2>
+<p>基于SSM框架开发的旅游民宿预定系统，不仅为游客提供了便捷的在线预订体验，也极大地提高了管理员的工作效率。系统的高级功能，如数据导出打印和复杂的订单查询，进一步满足了业务需求，展现了技术在旅游民宿行业的应用价值。未来，我们将继续优化系统功能，引入更多创新技术，为游客和管理者创造更多价值。</p>
+<p>如若大家想了解更多相关知识，请<strong>关注我</strong>，一名有故事的程序猿！！最后感谢您的阅读，希望本文对您有所帮助！如有任何疑问或建议，请随时<strong>留言交流</strong>。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款SSM二手书交易系统 - 程序猿代码之路</title><meta name="description" content="Spring+Mybatis+Spring MVC"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款SSM二手书交易系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 19, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://files.mdnice.com/user/64619/18aaf449-44ed-4b2a-b325-9122219902a3.jpg" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】后台回复【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">二手书交易SSM</span>】即可获取！</p>
+<blockquote>
+<p>💡 大家好，这里是<strong>程序猿代码之路</strong>。</p>
+<p><strong>💐背景 : </strong>在当今环保意识日益增强和资源节约型社会建设的背景下，二手交易作为一种节省资源和降低成本的消费方式越来越受到人们的欢迎。特别是对于学生群体而言，二手书籍的交易不仅可以促进知识的共享，还能大幅度降低教育成本。</p>
+<p><strong>🤟简介 : </strong>基于这样的市场需求和社会趋势，今天就给大家介绍一款基于<strong>SSM</strong>框架的<strong>二手书交易系统</strong>，旨在为书籍的循环利用提供一个快速、便捷、可靠的平台。</p>
+</blockquote>
+<h2 id="一项目介绍">一、项目介绍</h2>
+<p>随着资源共享与循环利用的理念日益深入人心，二手书交易逐渐成为大学生和读书爱好者之间交流的重要方式。基于<strong>SSM（Spring+SpringMVC+MyBatis）<strong>框架的</strong>二手书交易系统</strong>，致力于为书籍爱好者提供一个便捷、高效的交易平台。本文将详细介绍该系统的设计与实现过程，以及如何实现<strong>登录</strong>、<strong>上传二手图书</strong>、<strong>编辑二手图书</strong>和<strong>图书分页展示</strong>等功能。</p>
+<h2 id="二项目技术栈">二、项目技术栈</h2>
+<ul>
+<li><strong>前端</strong>：使用HTML5、CSS3和JavaScript进行页面设计和交互逻辑的实现。</li>
+<li><strong>后端</strong>：采用SSM框架，其中Spring负责整体的企业级应用开发，SpringMVC处理Web层的请求分发，MyBatis作为持久层框架与数据库交互。</li>
+<li><strong>数据库</strong>：使用MySQL进行数据存储，包括用户信息、书籍信息等。</li>
+</ul>
+<h2 id="三项目运行">三、项目运行</h2>
+<p>拿到源码解压之后得到如下文件：</p>
+<p><img src="https://files.mdnice.com/user/64619/e71f0a45-07d2-403c-80a0-255f294af406.png" alt=""></p>
+<p>在数据库中新建<code>bookshop</code>数据库，并且将<code>bookshop.sql</code>文件导入到数据库中得到如下表：</p>
+<p><img src="https://files.mdnice.com/user/64619/cc69a0c7-0f94-48eb-a469-7bde92c4a082.jpg" alt=""></p>
+<p>然后将项目导入到<code>Idea</code>中如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/07bde0ad-7714-4834-bb06-19c948932276.png" alt=""></p>
+<p>接下来打开<code>src/main/resources/jdbc.properties</code>文件进行数据库相关的修改，改成自己的：</p>
+<p><img src="https://files.mdnice.com/user/64619/a1058fe1-a872-4cca-b744-3590c8ece513.png" alt=""></p>
+<p>接下来配置<code>tomcat</code>服务器，按照如下步骤操作即可：</p>
+<p><img src="https://files.mdnice.com/user/64619/5a1207ac-cbcc-47b6-a35e-e7f32d89fb06.png" alt=""></p>
+<p>然后选择本地的<code>tomcat</code>路径</p>
+<p><img src="https://files.mdnice.com/user/64619/9e0d9403-c720-4073-94d1-a73c1b2e1d50.png" alt=""></p>
+<p>然后点击Deploymengt，在点‘+’号，选择Artifact方式</p>
+<p><img src="https://files.mdnice.com/user/64619/7feb34db-f34c-4cdb-a599-b04def0aab80.png" alt=""></p>
+<p>接下来咱们进入设置<code>settings</code>配置<code>maven</code>。如下</p>
+<p><img src="https://files.mdnice.com/user/64619/ca6a3c89-709b-4ccc-b730-e2a9a75037be.png" alt=""></p>
+<p>配置好了大家可以重新刷新一下<code>maven</code>即可,然后等待加载即可，如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/a5e5f924-ffd1-499e-9163-66e8366125d4.png" alt=""></p>
+<p>可能会缺少依赖，我下载依赖时就下载不了这个依赖，并且<code>pom.xml</code>文件中爆红了。</p>
+<p><img src="https://files.mdnice.com/user/64619/f5178649-4f21-411c-a128-12c8d396025f.png" alt=""></p>
+<p>这个很简单，我也把<code>IKAnalyzer6.5.0.jar</code>包一起打包并且放在资料中了，大家拿到之后运行如下命令添加到自己的本地的<code>maven</code>仓库中即可。我的<code>IKAnalyzer6.5.0.jar</code>jar包是重新放在<code>E:/data</code>文件夹下的，大家根据调整命令让其能够添加如自己的本地<code>maven</code>仓库即可。</p>
+<pre class="astro-code monokai" style="background-color:#272822;color:#F8F8F2; overflow-x: auto;" tabindex="0"><code><span class="line"><span>mvn install:install-file -Dfile=E:/data/IKAnalyzer6.5.0.jar -DgroupId=com.lucene -DartifactId=ikAnalyzer -Dversion=6.5.0 -Dpackaging=jar</span></span></code></pre>
+<p>重新加载依赖，运行项目即可！</p>
+<p><img src="https://files.mdnice.com/user/64619/44391be9-c278-45e8-94ad-d5b48da7cd0b.png" alt=""></p>
+<p>运行成功！！！</p>
+<p>项目地址：<a href="http://localhost:8888/users">http://localhost:8888/users</a></p>
+<p>学号：<strong>1505119</strong></p>
+<p>密码：<strong>675844</strong></p>
+<h2 id="四项目演示">四、项目演示</h2>
+<p><img src="https://files.mdnice.com/user/64619/18aaf449-44ed-4b2a-b325-9122219902a3.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/d57bf7c4-ae6c-4887-9988-149a7b88d7a7.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/89d3dcaa-6fab-421c-9265-7caddf304bd8.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/e15b54a3-8f5c-46d5-bdfc-22a215dd4a6e.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/1049c273-67f1-4e36-896f-8461adedcea3.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/7f3934bf-27fe-426c-bf65-ea7a993a8e24.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/b13b4362-f657-46db-acb5-10ba801228ec.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/0793d60f-4ccc-4bc6-8e77-b292939c10f4.jpg" alt=""></p>
+<p>其它的就不展示了，大家有兴趣的话可以自己去下载源码来运行看看。源码获取请关注公众号并后台回复【<strong>二手书交易SSM</strong>】即可获取！</p>
+<h2 id="总结">总结</h2>
+<p><strong>基于SSM框架的二手书交易系统</strong>，不仅提供了一个高效、安全的二手书交易平台，而且实现了用户友好的交互界面和稳定的后台管理。通过整合Spring、SpringMVC和MyBatis的优势，系统在处理用户请求、数据持久化以及安全性方面表现出良好的性能。</p>
+<p>如若大家想了解更多相关知识，请<strong>关注我</strong>，一名有故事的程序猿！！创作不易，都是自己一步一步去找并且总结的项目，麻烦大家给个<strong>关注</strong>和<strong>赞</strong>，最后感谢您的阅读，希望本文对您有所帮助！如有任何疑问或建议，请随时<strong>留言交流</strong>。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

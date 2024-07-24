@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款SSM宠物领养系统 - 程序猿代码之路</title><meta name="description" content="Spring+Mybatis+Spring MVC"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款SSM宠物领养系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 24, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://files.mdnice.com/user/64619/fed45e02-6a10-44ca-a98e-2e6e43bcc785.jpg" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】</p>
+<p>关注之后点击如下图【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">全部资料</span>】中可进入小程序中点击<strong>开源项目</strong>—><strong>Java</strong>中编号【<strong>19-SSM宠物领养系统</strong>】长按即可复制链接获取。还有更多项目源码等待你的发现！！</p>
+<p align="center">    
+<img src="https://files.mdnice.com/user/64619/fc3a72d4-6b57-4886-9085-1f216b3dd7d0.png" width="500">
+</p>
+<blockquote>
+<p>💡 大家好，这里是<strong>程序猿代码之路</strong>。</p>
+<p><strong>💐背景 : </strong>在当今社会，宠物已经成为许多家庭的重要成员，带给人们无尽的欢乐与陪伴。然而，随着宠物数量的增加，流浪动物问题也日益严重</p>
+<p><strong>🤟简介 : </strong>为了给这些无家可归的动物提供一个温暖的家，今天就给大家介绍一款<strong>基于SSM框架的宠物领养系统</strong>。该系统不仅提供了一个平台供人们领养宠物，还致力于提高人们对宠物权益保护的意识。</p>
+</blockquote>
+<h2 id="一项目介绍">一、项目介绍</h2>
+<p><strong>基于SSM的宠物领养系统</strong>是一个在线平台，它允许用户浏览可领养的宠物信息、发布领养信息、进行宠物领养申请以及管理领养流程。<strong>SSM框架</strong>，即<strong>Spring</strong>、<strong>Spring MVC</strong>和<strong>MyBatis</strong>的组合，为系统提供了稳定而高效的技术支撑。Spring负责整体的业务逻辑控制，Spring MVC处理前端请求的分发，而MyBatis则作为持久层框架与数据库交互。</p>
+<p>系统主要分为四个模块：用户模块、宠物模块和领养模块、管理员模块。</p>
+<h3 id="用户模块">用户模块</h3>
+<ul>
+<li><strong>注册登录</strong>：用户通过邮箱或手机号注册账号，登录后才能访问系统提供的其他服务。</li>
+<li><strong>资料编辑</strong>：用户可以编辑自己的个人信息，包括联系方式、地址等，便于领养后的宠物交付。</li>
+<li><strong>密码找回</strong>：提供密码找回功能，确保用户账号安全。</li>
+</ul>
+<h3 id="宠物模块">宠物模块</h3>
+<ul>
+<li><strong>宠物浏览</strong>：展示可领养宠物的信息，如品种、年龄、健康状况、性格描述等，并附有照片。</li>
+<li><strong>宠物搜索</strong>：用户可以通过品种、年龄、地区等条件搜索特定宠物。</li>
+<li><strong>宠物信息发布</strong>：宠物救助者或管理者可以发布新的宠物领养信息，经系统审核后公开展示。</li>
+</ul>
+<h3 id="领养模块">领养模块</h3>
+<ul>
+<li><strong>申请领养</strong>：用户选择心仪的宠物提交领养申请，填写必要的个人信息及领养意愿说明。</li>
+<li><strong>审批流程</strong>：宠物管理者对领养申请进行审核，包括对申请人条件的评估。</li>
+<li><strong>领养确认</strong>：审批通过后，用户和宠物管理者确认领养事项，如交付时间和方式。</li>
+</ul>
+<h3 id="管理员模块">管理员模块</h3>
+<ul>
+<li><strong>使用管理员账号登录管理员界面可对所有数据进行增删改查！</strong></li>
+</ul>
+<h2 id="二项目技术栈">二、项目技术栈</h2>
+<ul>
+<li><strong>Spring</strong>：作为核心容器，负责管理业务对象及其依赖关系，通过依赖注入（DI）和面向切面编程（AOP）等技术，提高了系统的模块化和灵活性。</li>
+<li><strong>Spring MVC</strong>：作为Web层的框架，Spring MVC按照Model2架构设计，将模型、视图和控制器分离，简化了Web应用的开发。</li>
+<li><strong>MyBatis</strong>：是一个半自动的ORM框架，它提供了灵活的数据映射方式，使得SQL语句与Java代码解耦，便于数据库操作和管理。</li>
+</ul>
+<h2 id="三项目运行">三、项目运行</h2>
+<p>拿到源码解压之后得到如下文件：</p>
+<p><img src="https://files.mdnice.com/user/64619/873353b6-b662-4924-9dd0-a167590b2d55.png" alt=""></p>
+<p>在数据库中新建<code>adopt</code>数据库，并且将<code>adopt.sql</code>文件导入到数据库中得到如下表：</p>
+<p><img src="https://files.mdnice.com/user/64619/2ea543ff-a0dc-496e-9426-073e5fca7776.png" alt=""></p>
+<p>然后将项目导入到<code>Idea</code>中如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/09853324-7b7c-4b14-bc3e-012c30473c4b.png" alt=""></p>
+<p>接下来打开<code>src/main/resources/database.properties</code>文件进行数据库相关的修改，改成自己的：</p>
+<p><img src="https://files.mdnice.com/user/64619/197211fa-e976-472d-8822-0d4a91c3be5e.png" alt=""></p>
+<p>接下来配置<code>tomcat</code>服务器，按照如下步骤操作即可：</p>
+<p><img src="https://files.mdnice.com/user/64619/ee44e673-5496-4109-8b5b-0067d334c994.png" alt=""></p>
+<p>然后选择本地的<code>tomcat</code>路径</p>
+<p><img src="https://files.mdnice.com/user/64619/f52b0379-69d4-488d-be5d-9f87a617efff.png" alt=""></p>
+<p>然后点击Deploymengt，在点‘+’号，选择Artifact方式</p>
+<p><img src="https://files.mdnice.com/user/64619/ae79aaf6-52ac-4f25-a944-43ca74b0d032.png" alt=""></p>
+<p>接下来咱们进入设置<code>settings</code>配置<code>maven</code>。如下</p>
+<p><img src="https://files.mdnice.com/user/64619/ca6a3c89-709b-4ccc-b730-e2a9a75037be.png" alt=""></p>
+<p>配置好了大家可以重新刷新一下<code>maven</code>即可,然后等待加载即可，如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/39e80a05-5568-4142-a32d-d234360b92fb.png" alt=""></p>
+<p>接下来编译项目如何启动即可：</p>
+<p><img src="https://files.mdnice.com/user/64619/5cd8dd15-f20f-4050-9436-106e0eb3d3cf.png" alt=""></p>
+<p>大家可能在编译的过程中会报错<code>java: 错误: 不支持发行版本 12</code>,遇到问题不要慌，对于我来说是报这个错误。大家在运行过程中肯定也会遇到其它的错误，但是一般百度都是能够解决的。接下来打开<code>settings</code>然后配置<code>Java Compiler</code>将其配置成jdk1.8即可，因为我一般都是用jdk1.8来运行项目的。</p>
+<p><img src="https://files.mdnice.com/user/64619/b8472913-4c12-4324-8ed2-339a49df74e4.png" alt=""></p>
+<p>然后再重新编译运行即可，运行成功，如下：</p>
+<p><img src="https://files.mdnice.com/user/64619/d8be8077-4eee-40d4-b746-14527c2c679b.png" alt=""></p>
+<p>运行成功！！！</p>
+<p>项目地址：<a href="http://localhost:8888/">http://localhost:8888/</a></p>
+<p>管理员或者用户账号和密码去数据库查看即可！</p>
+<h2 id="四项目演示">四、项目演示</h2>
+<h3 id="用户领养界面">用户领养界面</h3>
+<p><img src="https://files.mdnice.com/user/64619/fed45e02-6a10-44ca-a98e-2e6e43bcc785.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/e085bf4a-2d78-4d53-b34d-07136c1faf09.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/adaf2b53-4054-42ae-ae77-8889e858a48b.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/897e4582-d8b8-4c7d-839b-341cb3e65b7d.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f47f00f4-9773-405b-8520-4945e3d25369.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f1d7e731-32ad-4934-b427-d9234ded55a8.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/55cea766-6c03-4436-9e86-0290bd35006f.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/199bd500-063b-4a95-8a88-6dfe44a8d9ba.png" alt=""></p>
+<h3 id="管理员界面">管理员界面</h3>
+<p><img src="https://files.mdnice.com/user/64619/1ae85f5b-ff7d-4530-a29b-90ec7c6899d2.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/bc3c4ec0-465b-4a91-ae35-b0faa69ca45c.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/b30fdd79-2853-413c-b4ad-1347305f933c.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/46fa3c19-0ef6-4f52-9908-438386ebe4cc.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/03ec4fe8-3097-4ae3-a23d-9bc6f4b99a9c.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/ba195743-e4d6-47e7-a9fa-5440f4e8a621.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/95d079ad-b7af-4d01-ba27-f74972e6ce11.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/77a849df-8720-45e5-b677-b15e0c23505a.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f8813168-d0b5-4703-a704-8c7eb119d869.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f2915c8d-1deb-4bfa-95df-17b9ea1bd2d6.png" alt=""></p>
+<p>其它的就不展示了，大家有兴趣的话可以自己去下载源码来运行看看。</p>
+<p><img src="https://files.mdnice.com/user/64619/fc3a72d4-6b57-4886-9085-1f216b3dd7d0.png" alt=""></p>
+<p>关注公众号之后点击<strong>全部资料</strong>可进入小程序中点击<strong>开源项目</strong>—><strong>Java</strong>中编号【<strong>19-SSM宠物领养系统</strong>】长按即可复制链接获取。还有更多项目源码等待你的发现！！</p>
+<h2 id="总结">总结</h2>
+<p><strong>基于SSM的宠物领养系统</strong>，通过整合Spring、Spring MVC和MyBatis的优势，建立了一个功能丰富、操作便捷、安全可靠的宠物领养平台。它不仅为流浪宠物提供了更多被领养的机会，还促进了人们对宠物福利的关注。未来，我们将继续优化系统性能，增加更多人性化的功能，如宠物健康档案管理、领养家庭回访等，以更好地服务于宠物领养事业。</p>
+<p>如若大家想了解更多相关知识，请<strong>关注我</strong>，一名有故事的程序猿！！创作不易，都是自己一步一步去找并且总结的项目，麻烦大家给个<strong>关注</strong>和<strong>赞</strong>，最后感谢您的阅读，希望本文对您有所帮助！如有任何疑问或建议，请随时<strong>留言交流</strong>。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款SpringBoot电影分析可视化大屏 - 程序猿代码之路</title><meta name="description" content="Springboot+Mybatis-Plus+Vue"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款SpringBoot电影分析可视化大屏</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 19, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634976-426cb107-ee83-44f8-908e-748d8bb0e68b.webp#averageHue=%231f3348&amp;clientId=ue0fc2754-2333-4&amp;from=paste&amp;id=iwUMt&amp;originHeight=612&amp;originWidth=1080&amp;originalType=url&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;taskId=u3db4171e-c4f8-416d-9ec9-ace069555ab&amp;title=" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】后台回复【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">电影TOP分析可视化大屏</span>】即可获取！</p>
+<h2 id="一项目介绍">一、项目介绍</h2>
+<p>前后端分离的电影TOP分析可视化大屏是一种将前端展示层与后端数据处理层分开的系统架构。以下是对这种系统的详细介绍：</p>
+<ol>
+<li>
+<p>技术栈：</p>
+<ul>
+<li>
+<p>前端通常使用现代<strong>JavaScript</strong>框架，通过<strong>Jquery</strong>获取后端数据，结合数据可视化库<strong>ECharts</strong>，来构建用户界面和图表。</p>
+</li>
+<li>
+<p>后端则采用<strong>Spring Boot</strong>等框架提供<strong>RESTful API</strong>，负责处理数据和业务逻辑。使用<strong>MyBatis</strong>框架与数据库进行交互。</p>
+</li>
+<li>
+<p>数据库选择MySQL来存储和管理数据。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>功能特点：</p>
+<ul>
+<li>
+<p>数据爬取与处理：可以从网站如豆瓣电影等来源爬取数据，并进行相应的处理，以适应数据分析的需要。(<strong>注：目前没有</strong>)</p>
+</li>
+<li>
+<p>丰富的可视化效果：利用ECharts等工具提供直观美观的数据展示，如柱状图、折线图、饼图等多种图表类型。</p>
+</li>
+<li>
+<p>前后端分离：前端负责展示和用户交互，后端负责数据处理和业务逻辑，两者通过API接口进行通信，提高了系统的灵活性和可维护性。</p>
+</li>
+<li>
+<p>定时任务处理：可能会用到如xxl-job等定时任务处理工具，用于定期更新数据和执行后台任务。（<strong>注：目前没有</strong>）</p>
+</li>
+</ul>
+</li>
+<li>
+<p>应用场景：</p>
+<ul>
+<li>
+<p>适用于需要实时展示和分析大量数据的场合，如企业数据中心、监控系统等。</p>
+</li>
+<li>
+<p>在电影行业，可以用于展示票房数据、用户评分、电影类型分布等信息。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>总的来说，前后端分离的电影TOP分析可视化大屏是一个利用现代Web技术实现的、高效且易于维护的数据分析展示系统。它不仅能够提供实时的数据更新和丰富的视觉效果，还能够根据不同需求进行快速定制和扩展。</p>
+<h2 id="二运行步骤"><strong>二、运行步骤</strong></h2>
+<p>大家拿到的源码是如下这个样子的</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634484-2a92aa64-3c11-4842-bd15-7b9806c5dd73.webp#averageHue=%23fbf8f8&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=u5ea348e2&#x26;originHeight=370&#x26;originWidth=1025&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=uf4dd2108-8767-4527-841c-10164ad0b26&#x26;title=" alt=""></p>
+<h3 id="1后端运行步骤">1.后端运行步骤</h3>
+<p>解压之后导入Idea中，如下。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634479-cb1aacd1-7428-4bf1-b0e0-faae5c0ff264.webp#averageHue=%23e9ebf0&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=udeccedfe&#x26;originHeight=533&#x26;originWidth=1080&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=ueca5c68a-c837-4183-afcd-37e57af7f97&#x26;title=" alt=""></p>
+<p>将test.sql文件导入到数据库中如下：</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634527-8b50c2f6-38eb-4758-8648-85848062b5fd.webp#averageHue=%23e0e1dc&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=u5a8845c1&#x26;originHeight=622&#x26;originWidth=1080&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=u1ba97b49-a044-4034-8f72-e3fbc771a56&#x26;title=" alt="">
+在配置文件中修改数据库相关内容：</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634519-24c085af-4ea7-4981-b60a-7829c94f0855.webp#averageHue=%23ebedf1&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=u9150716b&#x26;originHeight=570&#x26;originWidth=1080&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=u63402861-c6be-411b-8649-00df41cad91&#x26;title=" alt=""></p>
+<p>然后刷新一下maven。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634532-08f887ba-9ff0-4aad-9c4c-b487ad2916f1.webp#averageHue=%23e7e9ee&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=uf39e42ce&#x26;originHeight=518&#x26;originWidth=1080&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=ud48d183e-3562-4ed3-bf68-783c31c357e&#x26;title=" alt=""></p>
+<p>然后运行即可</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634945-9c88b469-2e8c-48f0-b0a9-8da0987483e4.webp#averageHue=%23dbe5e7&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=u77e39f9e&#x26;originHeight=546&#x26;originWidth=1080&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=uec574ec2-2e53-46cd-b7ba-15e5ad7f4ad&#x26;title=" alt=""></p>
+<p>运行成功。</p>
+<h3 id="2前端运行步骤">2.前端运行步骤</h3>
+<p>将前端文件导入VScode或者HBuilderX中，我这里就用HBuilderX来示例啦。</p>
+<p>打开index.html文件，直接运行即可。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634964-36e52a68-a544-4ac0-9a22-1add105bd15c.webp#averageHue=%23fbf7e6&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=ud8d27c90&#x26;originHeight=568&#x26;originWidth=1080&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=u3d2ee42b-9523-4b19-8d35-d8f5cfc17a5&#x26;title=" alt=""></p>
+<h2 id="三项目演示"><strong>三、项目演示</strong></h2>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/webp/12522758/1711368634976-426cb107-ee83-44f8-908e-748d8bb0e68b.webp#averageHue=%231f3348&#x26;clientId=ue0fc2754-2333-4&#x26;from=paste&#x26;id=uf3db0f21&#x26;originHeight=612&#x26;originWidth=1080&#x26;originalType=url&#x26;ratio=1.25&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;taskId=u3db4171e-c4f8-416d-9ec9-ace069555ab&#x26;title=" alt=""></p>
+<p>源码大家可以关注我，回复【<strong>电影TOP分析可视化大屏</strong>】</p>
+<h2 id="四总结"><strong>四、总结</strong></h2>
+<p>本次分享的这个项目是前后端分离可视化大屏，同样也非常适用于初学者，对于想要学习可视化大屏的初学者来说这个项目完全可以下载学习的。如若大家想了解更多关于可视化大屏方面的内容，可以关注我，后续会持续更新可视化大屏相关知识和分享一些项目。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

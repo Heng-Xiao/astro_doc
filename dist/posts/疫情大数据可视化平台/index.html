@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款疫情大数据可视化平台 - 程序猿代码之路</title><meta name="description" content="SpringBoot+Echarts"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款疫情大数据可视化平台</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 23, 2023</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/1.png" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<h2 id="-关于">💡 <strong>「关于」</strong></h2>
+<p>花有重开日，人无再少年。</p>
+<p>大家好，我是蛋蛋小菜鸟，平时没事就喜欢瞎写，此系统于2022年所写， <strong>目前已开源，可免费学习使用，若分享请注明出处，谢谢。</strong></p>
+<p>座右铭：业精于勤，荒于嬉；行成于思，毁于随。</p>
+<p>因为热爱，所以拥抱未来。</p>
+<p>好事总会发生在下个转弯，祝大家愿望都一一实现！！</p>
+<p><strong>走过路过，麻烦各位看官老爷给个Star以及关注一下本人公众号！小的在这谢谢大家！！</strong></p>
+<h2 id="平台简介">平台简介</h2>
+<p><a href="https://gitee.com/Heng-Xiao/covid-19-boot">COVID-19-Boot</a> 国内疫情大数据可视化平台主要是为了更直观地实时关注和掌握新型冠状病毒感染的肺炎疫情防控进展，也更直观地了解全国的疫情情况，及时有效做出防控措施，在数据可视化技术的解决下，数据信息所面向的不仅是决策者，也能向大众进行授权展示，我们可以通过大数据可视化，可以更清楚、更直观地了解到目前疫情全国各地的感染人数，以此了解疫情的变化的趋势。</p>
+<p>本系统采用<a href="https://spring.io/projects/spring-boot">SpringBoot</a>架构开发web应用，使用<a href="https://echarts.apache.org/zh/index.html">Echarts</a>绘制基本图表，使用<a href="https://mybatis.org/mybatis-3/zh/getting-started.html">MyBatis-Plus</a> 来完成对MySQL数据库的操作。</p>
+<p>💡 <a href="https://gitee.com/Heng-Xiao/covid-19-boot">COVID-19-Boot</a> 基于<a href="https://spring.io/projects/spring-boot">SpringBoot</a>的国内疫情可视化平台， <strong>目前已开源分享，可免费学习使用，若分享请注明出处，谢谢。</strong></p>
+<ul>
+<li>🧑‍🤝‍🧑前端采用<a href="https://echarts.apache.org/zh/index.html">Echarts</a> 、<a href="https://jquery.com/">Jquery</a>、Ajax、HTML、CSS等技术。</li>
+<li>💡后端采用 Java 语言 <a href="https://spring.io/projects/spring-boot">SpringBoot</a> 、<a href="https://spring.io/projects/spring-framework">Spring</a>、<a href="https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc">SpringMVC</a>、<a href="https://mybatis.org/mybatis-3/zh/getting-started.html">MyBatis-Plus</a> 等框架技术。</li>
+</ul>
+<h2 id="源码地址">源码地址</h2>
+<p>gitee地址(主推)：<a href="https://gitee.com/Heng-Xiao/covid-19-boot">https://gitee.com/Heng-Xiao/covid-19-boot</a>👩‍👦‍👦</p>
+<p>github地址：<a href="https://github.com/Heng-Xiao/covid-19-boot">https://github.com/Heng-Xiao/covid-19-boot</a>👩‍👦‍👦</p>
+<h2 id="内置功能">内置功能</h2>
+<ol>
+<li>👨‍⚕️用户登录注册功能：用户登录和邮箱验证码注册功能，登录发送邮箱通知功能。</li>
+<li>👨‍🎓可视化大屏展示：国内疫情大数据可视化平台和全国风险地区监测平台。</li>
+<li>👨‍🎓疫情数据后台管理：国内疫情数据管理、省份疫情数据管理、疫情新闻数据管理、风险地区数据管理、用户管理等等。</li>
+<li>👨‍⚕️定时任务疫情数据爬虫功能：使用crontab定时任务运行python脚本来进行疫情数据的爬取并且将其存储进入MySQL数据库中。</li>
+</ol>
+<h2 id="详细结构">详细结构</h2>
+<pre class="astro-code monokai" style="background-color:#272822;color:#F8F8F2; overflow-x: auto;" tabindex="0"><code><span class="line"><span>- src</span></span>
+<span class="line"><span>    - main</span></span>
+<span class="line"><span>        - java</span></span>
+<span class="line"><span>            - com.xiao.covids java代码存放路径</span></span>
+<span class="line"><span>                - config 配置类存放包</span></span>
+<span class="line"><span>                - constant 常量类存放包</span></span>
+<span class="line"><span>                - controller 控制层</span></span>
+<span class="line"><span>                - entity 实体类存放包</span></span>
+<span class="line"><span>                - generator MyBatis-Plus自动生成类</span></span>
+<span class="line"><span>                - interceptor 拦截器存放包</span></span>
+<span class="line"><span>                - mapper mapper存放包</span></span>
+<span class="line"><span>                - service service层</span></span>
+<span class="line"><span>                - util 工具类</span></span>
+<span class="line"><span>                - CovidsApplication.java 启动类</span></span>
+<span class="line"><span>        - resources 页面和资源存放路径</span></span>
+<span class="line"><span>            - mapper mapper映射文件</span></span>
+<span class="line"><span>            - static 静态资源</span></span>
+<span class="line"><span>            - templates 页面</span></span>
+<span class="line"><span>            - application.properties 系统配置文件</span></span>
+<span class="line"><span>    - test</span></span>
+<span class="line"><span>         - java</span></span>
+<span class="line"><span>            - com.xiao.covids</span></span>
+<span class="line"><span>                - CovidsApplicationTests.java 测试类</span></span>
+<span class="line"><span>- target 编译文件</span></span>
+<span class="line"><span>- covid.sql 数据库表脚本</span></span>
+<span class="line"><span>- pom.xml maven配置文件</span></span></code></pre>
+<h2 id="准备工作">准备工作</h2>
+<pre class="astro-code monokai" style="background-color:#272822;color:#F8F8F2; overflow-x: auto;" tabindex="0"><code><span class="line"><span>jdk >= 1.8 (推荐1.8+版本)</span></span>
+<span class="line"><span>Mysql >= 5.7.0 (推荐5.7版本)</span></span>
+<span class="line"><span>Idea >= 2021</span></span>
+<span class="line"><span>操作系统 (推荐Windows10版本)</span></span>
+<span class="line"><span>Maven >= 3.5.2(推荐3.5+版本)</span></span></code></pre>
+<h2 id="运行准备">运行准备♝</h2>
+<pre class="astro-code monokai" style="background-color:#272822;color:#F8F8F2; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#A6E22E">--1.在MySQL数据库中新建数据库covid</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6E22E">--2.将covid.sql文件中的数据导入到数据库中</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6E22E">--3.加载pom.xml里面的依赖包</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6E22E">--4.在application.properties配置文件更换数据库用户名和密码、以及邮箱相关配置信息</span></span>
+<span class="line"><span style="color:#88846F"># 配置数据库信息</span></span>
+<span class="line"><span style="color:#A6E22E">spring.datasource.url</span><span style="color:#F8F8F2">=jdbc:mysql://localhost:3306/covid?serverTimeZone=Shanghai&#x26;</span><span style="color:#F92672">?</span><span style="color:#F8F8F2">useUnicode=true&#x26;characterEncoding</span><span style="color:#F92672">=</span><span style="color:#E6DB74">utf8</span><span style="color:#F8F8F2">&#x26;useSSL</span><span style="color:#F92672">=</span><span style="color:#AE81FF">false</span></span>
+<span class="line"><span style="color:#A6E22E">spring.datasource.username</span><span style="color:#F8F8F2">=*******</span></span>
+<span class="line"><span style="color:#A6E22E">spring.datasource.password</span><span style="color:#F8F8F2">=*******</span></span>
+<span class="line"><span style="color:#88846F">#邮件相关配置信息</span></span>
+<span class="line"><span style="color:#A6E22E">spring.mail.host</span><span style="color:#F8F8F2">=smtp.163.com</span></span>
+<span class="line"><span style="color:#A6E22E">spring.mail.username</span><span style="color:#F8F8F2">=**********@163.com</span></span>
+<span class="line"><span style="color:#A6E22E">spring.mail.password</span><span style="color:#F8F8F2">=**********</span></span>
+<span class="line"><span style="color:#A6E22E">spring.mail.protocol</span><span style="color:#F8F8F2">=smtp</span></span>
+<span class="line"><span style="color:#A6E22E">spring.mail.port</span><span style="color:#F8F8F2">=465</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6E22E">--5.在Const.java常量类中修改自己的邮箱账号</span></span>
+<span class="line"><span style="color:#A6E22E">public</span><span style="color:#E6DB74"> static</span><span style="color:#E6DB74"> final</span><span style="color:#E6DB74"> String</span><span style="color:#E6DB74"> EMAIL</span><span style="color:#E6DB74"> =</span><span style="color:#E6DB74"> "*********@qq.com"</span><span style="color:#F8F8F2">;</span></span></code></pre>
+<h3 id="访问项目">访问项目</h3>
+<ul>
+<li>访问地址：<a href="http://localhost">http://localhost</a> (默认此地址为80端口，如有修改请按照配置文件)</li>
+<li>账号：<code>admin</code> 密码：<code>admin</code></li>
+</ul>
+<h2 id="演示图">演示图✅</h2>
+<h3 id="登录注册">登录注册</h3>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/1.png" alt="image-01"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/2.png" alt="image-02"></p>
+<h3 id="可视化大屏">可视化大屏</h3>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/3.jpg" alt="image-03"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/4.jpg" alt="image-04"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/5.jpg" alt="image-05"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/6.jpg" alt="image-06"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/7.jpg" alt="image-07"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/8.jpg" alt="image-08"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/9.jpg" alt="image-09"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/10.jpg" alt="image-10"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/11.jpg" alt="image-11"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/12.jpg" alt="image-12"></p>
+<h3 id="后台管理系统">后台管理系统</h3>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/13.jpg" alt="image-13"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/131.jpg" alt="image-131"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/14.jpg" alt="image-14"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/15.jpg" alt="image-15"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/16.jpg" alt="image-16"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/17.jpg" alt="image-17"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/18.jpg" alt="image-18"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/19.jpg" alt="image-19"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/20.jpg" alt="image-20"></p>
+<p><img src="https://gitee.com/Heng-Xiao/covid-19-boot/raw/master/src/main/resources/static/readmeimg/21.jpg" alt="image-21"></p>
+<h2 id="后续打算">后续打算</h2>
+<ol>
+<li>👨‍⚕️疫情数据后台管理：新增爬虫脚本信息。</li>
+<li>👩‍⚕️加入Redis技术：优化可视化大屏查询数据时间以及登录注册发送邮箱验证码时间限制。</li>
+<li>👨‍🎓增加kafka技术：将爬取到的数据写入kafka之后，再去消费数据，无论是将数据清洗之后存入数据库中或者是将数据拿出来进行一些监测。</li>
+<li>👨‍🎓定时任务优化：将crontab定时任务写在java代码里面。</li>
+</ol>
+<p>目前由于本人的时间有限并且新冠疫情已经开放解封了导致数据不再更新维护。这些打算就不再做了，大家要是有兴趣的话可以自己做一下试试看。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

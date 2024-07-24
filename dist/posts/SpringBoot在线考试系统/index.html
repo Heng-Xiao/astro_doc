@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款前后端分离的基于SpringBoot+Vue在线考试系统 - 程序猿代码之路</title><meta name="description" content="SpringBoot+Vue"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款前后端分离的基于SpringBoot+Vue在线考试系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 23, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://files.mdnice.com/user/64619/d592d2ef-b0cf-4ff0-9082-42d68fc24757.png" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】</p>
+<p>关注之后点击如下图【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">全部资料</span>】中可进入小程序中点击<strong>开源项目</strong>—><strong>Java</strong>中编号【<strong>18-SpringBoot在线考试系统</strong>】长按即可复制链接获取。还有更多项目源码等待你的发现！！</p>
+<p align="center">    
+<img src="https://files.mdnice.com/user/64619/fc3a72d4-6b57-4886-9085-1f216b3dd7d0.png" width="500">
+</p>
+<blockquote>
+<p>🔥大家好，<strong>这里是程序猿代码之路</strong>。</p>
+<p>今天给大家介绍一款基于<strong>SpringBoot</strong>+<strong>Vue</strong>的前后端分离的<strong>在线考试系统</strong>。后面附<strong>源码</strong>获取方式。</p>
+</blockquote>
+<h2 id="一项目介绍">一、项目介绍</h2>
+<p>在现代教育体系中，随着网络技术的飞速发展，传统的纸笔考试模式正逐渐向线上转型。这一转型不仅提升了考试的效率和便捷性，还为教育评价方式带来了创新。在此背景下，基于<strong>SpringBoot+Vue的在线考试系统</strong>应运而生，它标志着科技与教育结合的深度融合，为教师教学和学生学习提供了全新的体验。</p>
+<p>在线考试系统主要分为管理员端、教师端和学生端，以满足不同角色的需求。</p>
+<h3 id="管理员端">管理员端</h3>
+<ul>
+<li><strong>用户管理</strong>：添加、修改、删除教师和学生的账号信息，分配角色权限。</li>
+<li><strong>考试管理</strong>：审核教师提交的考试申请，发布或撤回考试。</li>
+<li><strong>数据统计</strong>：查看系统整体运行情况，如参考人数、平均分、成绩分布等。</li>
+<li><strong>系统设置</strong>：配置系统基础参数，如考试时间限制、题目类型等。</li>
+</ul>
+<h3 id="教师端">教师端</h3>
+<ul>
+<li><strong>题库管理</strong>：增删改查题库中的试题，支持多种题型。</li>
+<li><strong>试卷生成</strong>：自定义试卷内容，设置考试时长、分值等参数。</li>
+<li><strong>成绩评定</strong>：考试结束后，自动或手动批改学生答卷，发布成绩。</li>
+<li><strong>数据分析</strong>：查看考试成绩统计，为教学提供反馈。</li>
+</ul>
+<h3 id="学生端">学生端</h3>
+<ul>
+<li><strong>参加考试</strong>：在规定时间内登录系统参加在线考试。</li>
+<li><strong>成绩查询</strong>：考试结束后查看个人成绩及答题情况。</li>
+<li><strong>资源下载</strong>：下载相关学习资料和考试说明。</li>
+</ul>
+<h2 id="二项目技术栈">二、项目技术栈</h2>
+<h3 id="后端---springboot">后端 - SpringBoot</h3>
+<ul>
+<li><strong>SpringBoot</strong>：作为后端的核心框架，以其轻量级、快速开发的特点，简化了传统Spring应用的复杂配置，通过自动配置和约定大于配置的理念，大大缩短了开发周期。它内置Tomcat、Jetty等服务器，简化了应用部署。</li>
+<li><strong>数据层</strong>：集成了Spring Data JPA和MyBatis等持久层框架，提供便捷的数据库操作方式</li>
+</ul>
+<h3 id="前端---vuejselement-ui">前端 - Vue.js+Element-UI</h3>
+<ul>
+<li><strong>Vue.js</strong>：一套渐进式JavaScript框架，以数据驱动和组件化的思想，构建用户界面。其轻量级、易于上手的特性，使其成为开发单页应用的首选。</li>
+<li><strong>TypeScript</strong>：引入TypeScript，增强了代码的可读性和可维护性，通过静态类型检查，减少运行时错误。</li>
+<li><strong>Element-UI</strong>：一套基于Vue.js的高质量UI组件库，提供了丰富的界面组件，满足各种场景需求，加快了开发速度，提升了用户体验。</li>
+</ul>
+<h2 id="三项目运行步骤">三、项目运行步骤</h2>
+<p>拿到资料解压后得到如下源码。</p>
+<p><img src="https://files.mdnice.com/user/64619/0b983da1-b1a2-4cdd-87e6-8c71436216ac.png" alt=""></p>
+<h3 id="后端启动">后端启动</h3>
+<p>在数据库中新建<code>exam</code>数据库，然后将sql文件夹下的<code>exam</code>文件导入数据库中。得到如下表：</p>
+<p><img src="https://files.mdnice.com/user/64619/3874ac52-0cba-409a-baab-23913caed806.png" alt=""></p>
+<p>将后端源码文件夹<code>springboot</code>导入<code>Idea</code>中如下：</p>
+<p><img src="https://files.mdnice.com/user/64619/da18de2b-85c8-4988-9635-ac7d05d73a3c.png" alt=""></p>
+<p>打开<code>src/main/resources/application.properties</code>文件修改数据库配置相关：</p>
+<p><img src="https://files.mdnice.com/user/64619/e7dd2b56-1bfa-445a-87ec-73df6ed8822a.png" alt=""></p>
+<p>接下来咱们进入设置<code>settings</code>配置<code>maven</code>。如下</p>
+<p><img src="https://files.mdnice.com/user/64619/ca6a3c89-709b-4ccc-b730-e2a9a75037be.png" alt=""></p>
+<p>配置好了大家可以重新刷新一下maven即可,然后等待加载即可，如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/c21a2797-820c-46f8-a289-2b9e669390a9.png" alt=""></p>
+<p>接下来启动项目即可</p>
+<p><img src="https://files.mdnice.com/user/64619/3ac5f748-c33f-4062-b1f5-a903c90d2b37.png" alt=""></p>
+<p>如下，启动成功！无报错！</p>
+<p><img src="https://files.mdnice.com/user/64619/a8da6f08-6361-4ac7-b1e0-fb8b6eab5a0b.png" alt=""></p>
+<h3 id="前端启动">前端启动</h3>
+<p>接下来教大家如何运行前端，<code>我接下来的步骤的前提都是建立在前端环境已经搭好的前提下，如已经安装node啥的这些.</code>我就懒得换编译工具了，同样也用Idea来进行运行了，当然了，大家可以用<strong>VSCode</strong>或者<strong>HbuilderX</strong>同样可以运行Vue项目的</p>
+<p>将前端源码文件夹<code>exam</code>导入<code>Idea</code>中，并且打开终端如下：</p>
+<p><img src="https://files.mdnice.com/user/64619/73f8579e-d027-4fcf-b0ef-31621a5d0544.png" alt=""></p>
+<p>然后在终端输入以下代码进行安装依赖：</p>
+<pre class="astro-code monokai" style="background-color:#272822;color:#F8F8F2; overflow-x: auto;" tabindex="0"><code><span class="line"><span>npm install</span></span></code></pre>
+<p>安装依赖成功之后就可以启动项目了</p>
+<pre class="astro-code monokai" style="background-color:#272822;color:#F8F8F2; overflow-x: auto;" tabindex="0"><code><span class="line"><span>npm run dev</span></span></code></pre>
+<p>启动成功</p>
+<p><img src="https://files.mdnice.com/user/64619/b7db53e8-81c9-47cc-8c2f-a74d22700aa9.png" alt=""></p>
+<p>地址如下：</p>
+<p><strong><a href="http://localhost:8088/#/">http://localhost:8088/#/</a></strong></p>
+<h2 id="四项目演示">四、项目演示</h2>
+<h3 id="考试端">考试端</h3>
+<p><img src="https://files.mdnice.com/user/64619/fcbe3d0c-8361-469c-89c2-6cd99a57c28a.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/d592d2ef-b0cf-4ff0-9082-42d68fc24757.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/c9306b63-0cd4-4c60-b018-e1772f614d12.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/146d8529-8cc6-4e85-b9de-8439196f20c6.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/77c5d19d-4da5-4338-bb06-da2d7f9df891.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/e765f4e0-3943-494c-be40-2fd43f43b7a6.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/9aef952c-1126-42fd-a7f5-548ce0d28141.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/ea9b72d7-f5ac-44f8-b501-ba4674e0ead0.png" alt=""></p>
+<h3 id="管理端">管理端</h3>
+<p><img src="https://files.mdnice.com/user/64619/1bc12183-3882-4060-8048-b4a7ee360b37.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/9772b89b-2a48-4fae-8baf-4b0804e10ac4.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/b3acf5f3-1ed3-4808-83f2-d0ce6a658f3f.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/fe50f55f-64fb-4bc8-85f0-c436ac5c6ea8.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f4f03977-000a-4d4b-a3f5-ed7b135225e3.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/9618145c-a91f-45f5-b586-96e596a1e1de.png" alt=""></p>
+<p>其它的就不展示了，大家有兴趣的话可以自己去下载源码来运行看看。</p>
+<p><img src="https://files.mdnice.com/user/64619/fc3a72d4-6b57-4886-9085-1f216b3dd7d0.png" alt=""></p>
+<p>关注公众号之后点击全部资料可进入小程序中点击<strong>开源项目</strong>—><strong>Java</strong>中编号【<strong>18-SpringBoot在线考试</strong>】长按即可复制链接获取。还有更多项目源码等待你的发现！！</p>
+<h2 id="总结">总结</h2>
+<p>基于<strong>SpringBoot+Vue的在线考试系统</strong>，通过整合当前前沿的技术框架，不仅实现了考试流程的自动化和智能化，还提供了高效、安全的考试环境。它的应用将极大地促进教育资源的均衡分配，提升教育质量，同时也为学生提供更加公平、便捷的考试途径。未来，希望继续优化系统功能，引入更多智能化元素，如AI监考、智能组卷等，不断推进在线教育的发展。</p>
+<p>如若大家想了解更多相关知识，请<strong>关注我</strong>，一名有故事的程序猿！！创作不易，都是自己一步一步去找并且总结的项目，麻烦大家给个<strong>关注</strong>和<strong>赞</strong>，最后感谢您的阅读，希望本文对您有所帮助！如有任何疑问或建议，请随时<strong>留言交流</strong>。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

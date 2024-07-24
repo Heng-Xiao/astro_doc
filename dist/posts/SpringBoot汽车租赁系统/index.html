@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>基于SpringBoot汽车租赁系统 - 程序猿代码之路</title><meta name="description" content="Springboot+MyBatis+MongoDB+Echarts"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">基于SpringBoot汽车租赁系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 22, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://files.mdnice.com/user/64619/59f138b0-416f-4835-949f-e2a1571c561d.png" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<p>源码获取请关注右侧微信公众号【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">程序猿代码之路</span>】</p>
+<p>关注之后点击如下图【<span style="font-weight: bold;text-align:left;font-size: 18px;color:#00bfff">全部资料</span>】中可进入小程序中点击<strong>开源项目</strong>—><strong>Java</strong>中编号【<strong>20-SpringBoot汽车租赁系统</strong>】长按即可复制链接获取。还有更多项目源码等待你的发现！！</p>
+<p align="center">    
+<img src="https://files.mdnice.com/user/64619/fc3a72d4-6b57-4886-9085-1f216b3dd7d0.png" width="500">
+</p>
+<blockquote>
+<p>🔥大家好，<strong>这里是程序猿代码之路</strong>。</p>
+<p><strong>💐背景 : </strong>在当今社会，汽车已成为许多人日常出行的重要工具。然而，并非人人都有能力或需求去购买一辆汽车，特别是在城市中，汽车租赁服务因此成为了一个既实用又便捷的选择</p>
+<p><strong>👫介绍 : </strong><strong>基于SpringBoot的汽车租赁系统</strong>，旨在为用户提供一站式的租车解决方案，同时为租车公司提供高效的车辆管理和客户管理功能。<strong>后附源码获取方式！</strong>。</p>
+</blockquote>
+<h2 id="一项目简介">一、项目简介</h2>
+<p>该系统采用了当前流行的技术栈，包括<strong>Spring Boot</strong>作为后端框架，<strong>MyBatis</strong>作为持久层框架，<strong>MongoDB</strong>作为非关系型数据库存储，以及一系列现代化的前端技术和服务。系统的设计理念是简化租车流程，提供多样化的车型选择，实现价格透明化，并在此基础上确保交易的安全性和数据的完整性。</p>
+<p>根据不同用户群体的需求，系统分为用户端和管理端两大模块。</p>
+<h3 id="1-用户端功能">1. 用户端功能</h3>
+<ul>
+<li>
+<p><strong>注册登录</strong>：用户通过手机号接收短信验证码进行注册和登录，确保账户安全。</p>
+</li>
+<li>
+<p><strong>浏览与筛选</strong>：用户可以查看所有可租赁的车辆，并通过条件筛选找到心仪的车型。</p>
+</li>
+<li>
+<p><strong>在线预订</strong>：用户选择车辆后，可以在线填写信息并提交订单，等待确认。</p>
+</li>
+</ul>
+<h3 id="2-管理端功能">2. 管理端功能</h3>
+<ul>
+<li>
+<p><strong>车辆管理</strong>：管理员能够添加、编辑或下架车辆信息，实时更新车辆状态。</p>
+</li>
+<li>
+<p><strong>订单管理</strong>：处理用户订单，审批订单请求，并实时更新订单状态。</p>
+</li>
+</ul>
+<h2 id="二项目技术栈">二、项目技术栈</h2>
+<ul>
+<li>
+<p><strong>Spring Boot</strong>：简化了Spring应用的配置和开发过程，提供了多种自动配置的选项，使得项目搭建更加快捷。</p>
+</li>
+<li>
+<p><strong>MyBatis</strong>：一个半自动化的持久层框架，提供了灵活的数据映射方式，便于开发者编写SQL和进行数据库操作。</p>
+</li>
+<li>
+<p><strong>MongoDB</strong>：作为NoSQL数据库，MongoDB在处理非结构化数据方面具有天然的优势，适合用于存储用户和订单等多变的数据集。</p>
+</li>
+<li>
+<p><strong>Echarts Data View</strong>：用于在系统内部展示数据统计与分析，如热门车型、订单量等，帮助管理者做出决策。</p>
+</li>
+<li>
+<p><strong>Alipay Sandbox</strong>：支付宝提供的沙箱环境，用于测试和模拟支付过程，确保在线支付功能的稳定性和安全性。</p>
+</li>
+<li>
+<p><strong>Dropzone Pictures Upload</strong>：实现车辆图片的批量上传，提升内容管理的效率。</p>
+</li>
+<li>
+<p><strong>Regist with SMS Number</strong>：结合短信服务实现用户的电话短信注册，提高用户注册的便捷性和安全性。</p>
+</li>
+</ul>
+<h2 id="三项目运行">三、项目运行</h2>
+<p><code>本项目运行前提，安装所需基础环境和工具比如：jdk、Idea、Maven、MySQL、MongoDB等等。</code></p>
+<p><code>当然，如果不安装MongoDB的话也是能够运行成功的，不过就是有些功能模块可能用不了罢了。</code></p>
+<p>拿到资料解压后得到如下源码。</p>
+<p><img src="https://files.mdnice.com/user/64619/abb3c6e9-6b10-4cdc-a3ba-e38c1d57b025.png" alt=""></p>
+<p>在数据库中新建<code>wbar</code>数据库，然后导入数据库文件夹下的<code>wbar.sql</code>文件。得到如下表：</p>
+<p><img src="https://files.mdnice.com/user/64619/632bb469-ac81-4146-a8b8-7793951a91f7.png" alt=""></p>
+<p>然后启动MongoDB数据库，导入数据库文件夹下的<code>carrent.js</code>文件。</p>
+<pre class="astro-code monokai" style="background-color:#272822;color:#F8F8F2; overflow-x: auto;" tabindex="0"><code><span class="line"><span>mongo 127.0.0.1:27017/carrent carrent.js</span></span></code></pre>
+<p>即可获得如下相关MongoDB数据</p>
+<p><img src="https://files.mdnice.com/user/64619/4f301750-c971-4536-b57e-2ce2769124ec.png" alt=""></p>
+<p>将文件夹导入<code>Idea</code>中如下：</p>
+<p><img src="https://files.mdnice.com/user/64619/d50be502-f4a9-4a8f-bfc5-8f9d0feb4f6f.png" alt=""></p>
+<p>打开<code>src/main/resources/application.properties</code>文件修改数据库配置相关：</p>
+<p><img src="https://files.mdnice.com/user/64619/9ced2071-a00b-4884-9692-9b82f87c05ee.png" alt=""></p>
+<p>接下来咱们进入设置<code>settings</code>配置<code>maven</code>。如下</p>
+<p><img src="https://files.mdnice.com/user/64619/ca6a3c89-709b-4ccc-b730-e2a9a75037be.png" alt=""></p>
+<p>配置好了大家可以重新刷新一下maven即可,然后等待加载即可，如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/302c3075-3c53-4b70-bd90-cdc270e9c48d.png" alt=""></p>
+<p>接下来启动项目即可</p>
+<p><img src="https://files.mdnice.com/user/64619/125ea892-6527-48b4-a2ac-4e7788c63f1d.png" alt=""></p>
+<p>如下，启动成功！无报错！</p>
+<p><img src="https://files.mdnice.com/user/64619/1b4fb2ca-7a33-4e45-a141-6d02fea3bf7c.png" alt=""></p>
+<ul>
+<li>项目地址：</li>
+</ul>
+<p><a href="http://127.0.0.1:8080/user/login">http://127.0.0.1:8080/user/login</a></p>
+<ul>
+<li>管理员账号和密码</li>
+</ul>
+<p><strong>admin</strong> / <strong>970423</strong></p>
+<ul>
+<li>用户账号和密码</li>
+</ul>
+<p><strong>user1</strong> / <strong>1234</strong></p>
+<h2 id="四项目演示">四、项目演示</h2>
+<h3 id="登录页">登录页</h3>
+<p><img src="https://files.mdnice.com/user/64619/385e620a-bcb3-43dc-9c7a-db654e1a22d9.png" alt=""></p>
+<h3 id="管理员登录">管理员登录</h3>
+<p><img src="https://files.mdnice.com/user/64619/59f138b0-416f-4835-949f-e2a1571c561d.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/fe6b245a-2c93-44f5-b94d-4e04a1403ee6.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/9e98f234-923c-4525-847e-4c55450a90c9.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/58187c7e-d95c-4d7a-a7ca-ed692920f4b5.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f535023f-e981-46ec-aa13-bd8a54ac392b.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/d98aad32-7b01-424f-a70e-69880590123b.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/51709435-fc12-45ea-9805-3652e3dc9d9a.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/8a082e94-a8b0-4657-af32-199bf9c533b1.png" alt=""></p>
+<h3 id="用户登录">用户登录</h3>
+<p><img src="https://files.mdnice.com/user/64619/f8e4c653-7449-4eec-b2e6-978fd79fad82.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/e353f029-2339-428f-9fbd-26bba88a43aa.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/43a15f4f-ad76-4497-b212-15ab3ad14daf.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/7a8a1575-f3ea-4dac-a2a8-f63e3f8f3dea.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/6a97fd51-e547-4ae9-8845-298d23ed1fd2.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/83de4632-55e6-4847-acc9-799a4794e2a6.png" alt=""></p>
+<h3 id="源码获取方式">源码获取方式</h3>
+<p>其它的就不展示了，大家有兴趣的话可以自己去下载源码来运行看看。</p>
+<p><img src="https://files.mdnice.com/user/64619/fc3a72d4-6b57-4886-9085-1f216b3dd7d0.png" alt=""></p>
+<p>关注公众号之后点击<strong>全部资料</strong>可进入小程序中点击<strong>开源项目</strong>—><strong>Java</strong>中编号【<strong>20-SpringBoot汽车租赁系统</strong>】长按即可复制链接获取。还有更多项目源码等待你的发现！！</p>
+<h2 id="总结">总结</h2>
+<p><strong>基于SpringBoot的汽车租赁系统</strong>，通过整合当前前沿的技术框架和组件，不仅为用户提供了一个便捷、高效的租车平台，也为租车公司带来了管理上的革新。未来，希望能够继续优化系统功能，引入更多智能化元素，如大数据分析、AI推荐算法等，以进一步提升服务质量和系统智能水平。</p>
+<p>如若大家想了解更多相关知识，请<strong>关注我</strong>，一名有故事的程序猿！！创作不易，都是自己一步一步去找并且总结的项目，麻烦大家给个<strong>关注</strong>和<strong>赞</strong>，最后感谢您的阅读，希望本文对您有所帮助！如有任何疑问或建议，请随时<strong>留言交流</strong>。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一款基于springboot的博客系统 - 程序猿代码之路</title><meta name="description" content="SpringBoot+MyBatis+Vue"><meta name="author" content="Xiao-Heng"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.CvLV1VIh.css" /></head> <body class="bg-slate-900 text-gray-100"> <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/"><div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"><svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"></path><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="9" y="8" width="6" height="12" rx="1"></rect><rect x="15" y="4" width="6" height="16" rx="1"></rect><path d="M4 20h14"></path></svg>程序猿代码之路</div></a><nav><ul class="flex gap-x-3 font-medium text-gray-200"><li class="hover:text-white"><a href="/posts/" target="_self">文章</a></li><li class="hover:text-white"><a href="https://coderroad.cn/weixgzhh.png" target="_self">微信公众号</a></li></ul></nav></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><h1 class="text-center text-3xl font-bold">一款基于springboot的博客系统</h1><div class="mt-2 text-center text-sm text-gray-400">By <!-- -->Xiao-Heng<!-- --> on<!-- --> <!-- -->Jul 25, 2024</div><div class="mx-auto mt-5 max-w-prose"><div class="aspect-w-3 aspect-h-2"><img class="h-full w-full rounded-lg object-cover object-center" src="https://files.mdnice.com/user/64619/4ffbd4ec-9736-4505-bc70-4b5e40a9c250.jpg" alt="Image Index" loading="lazy"/></div><div class="prose prose-invert mt-8 prose-img:rounded-lg"> <meta name="referrer" content="no-referrer">
+<blockquote>
+<p>大家好，这里是<strong>程序猿代码之路</strong>！在数字化时代，个人博客成为展示自我、分享知识和思想交流的重要平台。针对这一需求，今天就给大家介绍一款<strong>基于SpringBoot框架的个人博客系统</strong>。后附<strong>源码</strong>获取方式！！</p>
+</blockquote>
+<h2 id="一项目简介">一、项目简介</h2>
+<p>该系统旨在提供一个简单、易用且功能全面的个人博客平台。它允许用户注册、登录、撰写文章、管理文章、评论及维护个人资料等。</p>
+<h3 id="行业背景">行业背景</h3>
+<ul>
+<li>
+<p><strong>个人媒体兴起</strong>：随着互联网的发展，个人博客作为一种自媒体形式越来越受欢迎。</p>
+</li>
+<li>
+<p><strong>技术选型考量</strong>：选择SpringBoot作为后端框架，因其简化了Spring应用的初始搭建及开发过程。</p>
+</li>
+</ul>
+<h3 id="系统目标">系统目标</h3>
+<ul>
+<li><strong>用户友好</strong>：界面简洁直观，操作便捷，降低用户的使用门槛。</li>
+<li><strong>功能全面</strong>：覆盖博客的核心功能，包括文章管理、评论互动等。</li>
+<li><strong>响应式设计</strong>：适应不同设备和屏幕尺寸，提升移动设备的访问体验。</li>
+</ul>
+<h3 id="系统功能">系统功能</h3>
+<p>根据用户需求和操作习惯，该系统功能划分为用户端、博客管理端两大模块。</p>
+<ul>
+<li><strong>用户端</strong>：可以进行文章的阅读以及评论等等。</li>
+<li><strong>博客管理端</strong>：可以进行文章的发布和编辑等等。</li>
+</ul>
+<h2 id="二项目技术栈">二、项目技术栈</h2>
+<ul>
+<li>
+<p><strong>后端技术</strong>：采用SpringBoot构建RESTful API，实现业务逻辑和数据处理。以及使用mybatis、thymeleaf等技术。</p>
+</li>
+<li>
+<p><strong>前端技术</strong>：使用HTML5、CSS3和JavaScript等等。</p>
+</li>
+</ul>
+<h2 id="三项目运行">三、项目运行</h2>
+<p>得到源码之后解压得到如下文件夹：</p>
+<p><img src="https://files.mdnice.com/user/64619/1ea652f6-ae38-47ed-89c3-d5f4bfdd81aa.png" alt=""></p>
+<p>接下来教大家如何启动项目代码，启动之前需要将数据导入到数据库中。在数据库中新建<code>tale</code>数据库，然后导入数据库文件夹下的<code>schema.sql</code>文件。得到如下表：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ibibRb6TL2bRvAavkw6n9vGfyiaFTUbtt2zskJZpIhM7FYAHcgRqGuPY0O8SdUI05A0SjMB4JvyoebAyCgEvcUmeg/640?wx_fmt=png&#x26;from=appmsg&#x26;tp=wxpic&#x26;wxfrom=5&#x26;wx_lazy=1&#x26;wx_co=1" alt=""></p>
+<p>将文件夹导入<code>Idea</code>中如下：</p>
+<p><img src="https://files.mdnice.com/user/64619/064e42af-6c2d-48b1-83c3-7d9e516d94aa.png" alt=""></p>
+<p>打开<code>src/main/resources/application.yml</code>文件修改数据库配置相关：</p>
+<p><img src="https://files.mdnice.com/user/64619/09a805c6-0338-4119-b1fb-43355aa71d62.png" alt=""></p>
+<p>接下来咱们进入设置<code>settings</code>配置<code>maven</code>。如下</p>
+<p><img src="https://files.mdnice.com/user/64619/ca6a3c89-709b-4ccc-b730-e2a9a75037be.png" alt=""></p>
+<p>配置好了大家可以重新刷新一下maven即可,然后等待加载即可，如下所示：</p>
+<p><img src="https://files.mdnice.com/user/64619/70bcf30c-54e1-444d-8991-0448f239596b.png" alt=""></p>
+<p>接下来启动项目即可</p>
+<p><img src="https://files.mdnice.com/user/64619/b47dc682-0617-443d-a2af-98a24a546f8a.png" alt=""></p>
+<p>如下，启动成功！无报错！</p>
+<p><img src="https://files.mdnice.com/user/64619/4942d70c-f0cf-44f7-813b-17f688f00f70.png" alt=""></p>
+<ul>
+<li>前台地址：</li>
+</ul>
+<p><a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a></p>
+<ul>
+<li>后台地址：</li>
+</ul>
+<p><a href="http://127.0.0.1:8080/admin/login">http://127.0.0.1:8080/admin/login</a></p>
+<ul>
+<li>管理员账号和密码</li>
+</ul>
+<p><strong>admin</strong> / <strong>123456</strong></p>
+<h2 id="四项目演示">四、项目演示</h2>
+<h3 id="前台展示界面">前台展示界面</h3>
+<p><img src="https://files.mdnice.com/user/64619/67487071-a2db-4908-966a-2cdfde526836.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/c77b79a9-2f5d-451f-a84d-65ec899424ef.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/922ac819-aa2c-4c97-8a15-8969497cb578.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/3c2b43ea-e873-4be1-bbd2-bf2e01b4b91c.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/c02c9671-fea2-4a75-b37a-ce3f43c121a3.png" alt=""></p>
+<h3 id="后台管理界面">后台管理界面</h3>
+<p><img src="https://files.mdnice.com/user/64619/4ffbd4ec-9736-4505-bc70-4b5e40a9c250.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f5b48355-bab0-4ada-be14-ee3c2627f4e2.jpg" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/dd3edfd1-9332-44b4-90e4-8af33d91574e.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/f95314da-4d56-42e1-aa6a-3abda2191c0d.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/76a30e0a-86a2-4759-8420-9db48f39c975.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/ac5d5261-9c1f-45ff-b0ea-c4b556299f27.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/1d7a5198-6c8e-4713-9101-b02f81479d19.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/e356ab30-c600-4f95-8fa0-170f23a1b935.png" alt=""></p>
+<p><img src="https://files.mdnice.com/user/64619/80d16a34-fdc2-4e39-9f45-09e2b009595d.png" alt=""></p>
+<h3 id="源码获取方式">源码获取方式</h3>
+<p>其它的就不展示了，大家有兴趣的话可以自己去下载源码来运行看看。</p>
+<p><img src="https://files.mdnice.com/user/64619/fc3a72d4-6b57-4886-9085-1f216b3dd7d0.png" alt=""></p>
+<p>关注公众号之后点击<strong>全部资料</strong>可进入小程序中点击<strong>开源项目</strong>—><strong>Java</strong>中编号【<strong>22-SpringBoot个人博客系统</strong>】长按即可复制链接获取。还有更多项目源码等待你的发现！！</p>
+<h2 id="总结">总结</h2>
+<p><strong>基于SpringBoot的个人博客系统</strong>，凭借其易用性、灵活性和扩展性，为个人提供了展示自我和分享知识的平台。未来，希望将继续关注新技术发展，引入更多创新功能，如语音识别写作、AI推荐等，以进一步提升用户体验和系统智能化水平。</p>
+<p>如若大家想了解更多相关知识，请<strong>关注我</strong>，一名有故事的程序猿！！创作不易，都是自己一步一步去找并且总结的项目，麻烦大家给个<strong>关注</strong>和<strong>赞</strong>，最后感谢您的阅读，希望本文对您有所帮助！如有任何疑问或建议，请随时<strong>留言交流</strong>。</p> </div></div></div>  <div class="mx-auto max-w-screen-lg px-3 py-6"><div class="border-t border-gray-600 pt-5"><div class="text-sm text-gray-200">© Copyright <!-- -->2024<!-- --> by <!-- -->程序猿代码之路<!-- -->. Built with ♥ by<!-- --> <a class="text-cyan-400 hover:underline" href="https://creativedesignsguru.com" target="_blank" rel="noopener noreferrer">CreativeDesignsGuru</a>.</div></div></div> </body></html>
